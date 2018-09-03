@@ -343,6 +343,9 @@ Properties
 **text** : string
     The text to be displayed in the **TextField**
 
+**placeholderText** : string
+    This property contains the text that is shown in the text field when the text field is empty.
+
 **readOnly** : bool
     Holds whether the text field is in read-only mode.
     If set to true, the user cannot edit the text.
