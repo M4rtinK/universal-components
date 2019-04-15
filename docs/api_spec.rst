@@ -326,6 +326,23 @@ Properties
 
     The default value is true.
 
+**wrapMode** : enumeration
+    Set this property to wrap the text to the TextEdit item's width. The text will only wrap if an explicit width has been set.
+
+    - **TextEdit.NoWrap** - no wrapping will be performed. If the text contains insufficient newlines, then implicitWidth will exceed a set width.
+    - **TextEdit.WordWrap** - wrapping is done on word boundaries only. If a word is too long, implicitWidth will exceed a set width.
+    - **TextEdit.WrapAnywhere** - wrapping is done at any point on a line, even if it occurs in the middle of a word.
+    - **TextEdit.Wrap** - if possible, wrapping occurs at a word boundary; otherwise it will occur at the appropriate point on the line, even in the middle of a word.
+
+    The default is **TextEdit.NoWrap**. If you set a width, consider using **TextEdit.Wrap**.
+
+**selectByMouse** : bool
+    If true, the user can use the mouse to select text in some platform-specific way.
+
+    NOTE: The selectByMouse property has no effect on Sailfish OS, but can be safely set
+          for compatibility purposes.
+
+    The default value is false.
 
 TODO: The *assured* API currently provided by UC for the **TextArea** is quite basic at the moment and it would
 be a good idea to extend it in the future - while keeping requirements realistic given backend variations.
