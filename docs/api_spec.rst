@@ -594,8 +594,25 @@ Properties
 **highlightedColor** : color
     Color used when the background rectangle is pressed. 
 
-**normalcolor** : color
+**normalColor** : color
     Color used when the background rectangle is not pressed.
+
+**borderColor** : color
+    Color of the background rectangle border (if any).
+
+**borderWidth** : int
+    Width of the border rectangle border.
+
+    The default value is 0 (no border).
+
+**cornerRadius** : int
+    Radius of the background rectangle corner radius.
+
+    NOTE: cornerRadius != 0 enables antialiasing for the given background rectangle,
+          which is generally needed to make round corners look reasonably good in
+          most cases
+
+    The default value is 0 (right angle corners).
 
 **pressed_override** : bool
     Makes it possible to simulate pressed state even if background rectangle is not physically pressed.
