@@ -6,4 +6,12 @@ Page {
     property bool isInactive : status == PageStatus.Inactive
     property bool isActivating : status == PageStatus.Activating
     property bool isDeactivating : status == PageStatus.Deactivating
+    // track if page page ever was and still is on the page stack
+    property bool wasOnPageStack : false
+    property bool isOnPageStack : pageContainer != null
+    onIsOnPageStackChanged : {
+        if (!wasOnPageStack && isOnPageStack) {
+            wasOnPageStack = true
+        }
+    }
 }

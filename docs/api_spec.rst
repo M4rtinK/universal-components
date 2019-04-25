@@ -135,6 +135,13 @@ Properties
 **isDeactivating** : bool
     If true the page is about to become inactive.
 
+**wasOnPageStack** : bool
+    If true the page was at least once on the application page stack. If reset from
+    true to false will be true agan next time the page is put on the page stack.
+
+**isOnPageStack** : bool
+    If true the page is currently on the application page stack.
+
 PageHeader 
 ----------
 
