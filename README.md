@@ -113,6 +113,7 @@ Applications using Universal Components
 -------------------------------------
 
 * [modRana flexible navigation system](https://github.com/M4rtinK/modrana)
+* [Tsubame flexible Twitter client](https://github.com/M4rtinK/tsubame)
 * [the Tensor Matrix client](https://github.com/davidar/tensor)
 
 
