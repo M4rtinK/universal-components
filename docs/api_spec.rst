@@ -716,6 +716,22 @@ PlatformListView
 This element provide access to an enhanced platform specific list view (**SilicaListView** has fast scroll support, etc.).
 With backends that don't have such enhancements a normal ListView is used.
 
+PlatformImagePicker
+-------------------
+
+This element provides access to a platform specific multiple image picker. A common API is provided, but applications
+might in some cases want to use the detailed platforms specific API that might not always be possible to fully abstract.
+
+**selectedFiles** : array
+    An array containing *file://* URLs of the selected files.
+
+Methods
+^^^^^^^
+
+**run**\()
+    Shows the image picker. Depending on the platform, this might manifest as separate picker dialog window showing up
+    or a picker page being pushed to the page stack.
+
 
 Adding a new element
 ====================

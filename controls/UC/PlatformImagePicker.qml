@@ -9,11 +9,11 @@ FileDialog {
 
     selectMultiple : true
 
-    property var selectedContent : ""
+    property var selectedFiles : []
 
     onAccepted: {
         console.log("PlatformImagePicker: you chose: " + imagePicker.fileUrls)
-        selectedContent = imagePicker.fileUrls
+        selectedFiles = imagePicker.fileUrls
     }
     onRejected: {
         console.log("PlatformImagePicker: canceled")
