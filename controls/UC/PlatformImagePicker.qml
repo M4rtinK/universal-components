@@ -7,8 +7,6 @@ FileDialog {
 
     folder : shortcuts.pictures
 
-    selectMultiple : true
-
     property var selectedFiles : []
 
     onAccepted: {

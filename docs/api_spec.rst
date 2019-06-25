@@ -725,6 +725,9 @@ might in some cases want to use the detailed platforms specific API that might n
 **selectedFiles** : array
     An array containing *file://* URLs of the selected files.
 
+**selectMultiple** : bool
+    Controls if multiple images can be selected. The default value is false.
+
 Methods
 ^^^^^^^
 

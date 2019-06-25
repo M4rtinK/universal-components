@@ -5,12 +5,12 @@ Item {
     id : imagePicker
 
     property var selectedFiles : []
+    property bool selectMultiple : false
 
     Component {
          id: multiImagePickerDialog
          MultiImagePickerDialog {
              onAccepted: {
-                 selectedFiles = ""
                  var urls = []
                  for (var i = 0; i < selectedContent.count; ++i) {
                      var url = selectedContent.get(i).url
@@ -22,12 +22,25 @@ Item {
 
              onRejected: selectedFiles = []
          }
-     }
+    }
+
+    Component {
+        id: singleImagePickerDialog
+        ImagePickerPage {
+            onSelectedContentPropertiesChanged: {
+                selectedFiles = [selectedContentProperties.filePath]
+            }
+        }
+    }
 
     function run() {
         // similar to old-school dialogs with their
         // own exposed mainloop, let's just start this
         // thing with a run() method
-        rWin.pushPage(multiImagePickerDialog)
+        if (selectMultiple) {
+            rWin.pushPage(multiImagePickerDialog)
+        } else {
+            rWin.pushPage(singleImagePickerDialog)
+        }
     }
 }
