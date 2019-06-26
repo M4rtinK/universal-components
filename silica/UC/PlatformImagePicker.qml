@@ -30,7 +30,7 @@ Item {
             onSelectedContentPropertiesChanged: {
                 var urls = []
                 urls.push(selectedContentProperties.filePath)
-                selectedFiles = url
+                selectedFiles = urls
             }
         }
     }
