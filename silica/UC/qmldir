@@ -25,6 +25,7 @@ Popup 1.0 Popup.qml
 PlatformFlickable 1.0 PlatformFlickable.qml
 PlatformListView 1.0 PlatformListView.qml
 PlatformImagePicker 1.0 PlatformImagePicker.qml
+PlatformVideoPicker 1.0 PlatformVideoPicker.qml
 ScrollBar 1.0 ScrollBar.qml
 SectionHeader 1.0 SectionHeader.qml
 BusyIndicator 1.0 BusyIndicator.qml
