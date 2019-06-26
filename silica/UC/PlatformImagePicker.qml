@@ -28,7 +28,9 @@ Item {
         id: singleImagePickerDialog
         ImagePickerPage {
             onSelectedContentPropertiesChanged: {
-                selectedFiles = [selectedContentProperties.filePath]
+                var urls = []
+                urls.push(selectedContentProperties.filePath)
+                selectedFiles = url
             }
         }
     }
